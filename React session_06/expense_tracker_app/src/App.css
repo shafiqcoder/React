@@ -1,0 +1,90 @@
+* body{
+  background-color:#292c35;
+}
+
+.container{
+  max-width: 400px;
+  min-height: 450px;
+  margin: 0 auto;
+  background-color: #ddc9b6;
+  box-shadow: 0 0 10px gray;
+  margin-top: 50px;
+  padding: 15px 50px;
+}
+
+.text-center{
+  text-align:center;
+}
+.shafiq{
+  text-align:right;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0 auto;
+}
+.expense-container{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.911);
+  box-shadow: 0 0 20px gray;
+  border-radius: 5px;
+
+}
+
+.transcation-form input{
+width: 100%;
+margin: 10px 0;
+padding: 5px 5px;
+justify-content: center;
+
+}
+.transcation-form input[type="submit"]{
+  background-color:hsl(195, 45%, 26%);
+  border: none;
+  color: white;
+  padding: 14px 219px;
+  padding-left: 40%;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 7px;
+
+  }
+
+.transaction-list{
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+.transaction-list > li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px gray;
+  padding: 10px 5px;
+  background-color: whitesmoke;
+  margin: 5px 0;
+  border-radius: 7px;
+}
+
+
+.del-btn {
+  cursor: pointer;
+  background-color: rgb(201, 70, 70);
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 7px;
+  position: absolute;
+  border-radius: 5px;
+  left: 36%;
+  transform: translate(-100%, 10%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.transaction-list li:hover .del-btn {
+  opacity: 1;
+}
