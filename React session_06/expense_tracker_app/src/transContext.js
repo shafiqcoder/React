@@ -27,7 +27,6 @@ export const TransactionProvider = ({ children }) => {
             transactions: state,
             addTransaction,
             deleteTransaction
-
         }}>
             {children}
         </TransactionContext.Provider>

@@ -41,12 +41,12 @@ justify-content: center;
   background-color:hsl(195, 45%, 26%);
   border: none;
   color: white;
-  padding: 14px 219px;
-  padding-left: 40%;
+  padding: 10px;
+  /* padding-left: 40%; */
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
-  width: 100%;
+  /* width: 100%; */
   border-radius: 7px;
 
   }

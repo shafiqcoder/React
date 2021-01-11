@@ -88,6 +88,7 @@ function Child() {
                 <br />
                 <label>
                     Enter Amount <br />
+                    (for INCOME write with + sign & EXPENSE with - sign)
                     <input type="number" value={newAmount} placeholder="Amount" onChange={(ev) => setAmount(ev.target.value)} required />
                 </label>
                 <br />
