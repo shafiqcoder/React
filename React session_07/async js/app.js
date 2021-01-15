@@ -43,3 +43,6 @@ myPromise.then(function () {
     .catch(function (error) {
         console.log("Error");
     })
+    //_________________________________________________________
+//Async-Await
+
