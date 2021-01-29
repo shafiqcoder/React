@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         flexGrow: 1,
-        display: 'none',
+        display: 'block',
         // position: 'absolute',
         [theme.breakpoints.up('sm')]: {
             display: 'block',
@@ -21,23 +21,27 @@ const useStyles = makeStyles((theme) => ({
 export default function Navbar() {
     const classes = useStyles();
     return (
-        <div className={classes.root}>
-            <AppBar position="static">
-                <Toolbar>
-                    <Typography className={classes.title} align="center" variant="h3" >
-                        PAKISTAN live update
-          </Typography>
-                </Toolbar>
-            </AppBar>
-            <AppBar position="static">
-                <Toolbar>
-                    <Typography className={classes.title} align="center" variant="h7" >
-                        Covid-19 Tracker (source: covid.gov.pk) <br />
-@shafiqcoder
-                    </Typography>
 
+        <div className={classes.root}>
+
+
+            <AppBar position="static">
+                <Toolbar>
+                    <Typography className={classes.title} variant="h6" align="left" noWrap="true" >
+                        PAKISTAN
+                    </Typography>
+                    <Typography className={classes.title} variant="h7" align="right" noWrap="bool" >
+                        COVID-19 Live Update <br />
+                        @shafiqcoder
+                    </Typography>
                 </Toolbar>
             </AppBar>
+
+            <h5 style={{ textAlign: "center", color: "red" }}>- KNOW ABOUT COVID-19<br />
+            See the Realtime Pakistan
+COVID-19 Situation!</h5><br />
+            <h4>PAKISTAN statistics</h4>
+
         </div>
     );
 }
