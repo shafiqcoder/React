@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Animation API</title>
+    <style>
+        #box {
+            height: 100px;
+            width: 300px;
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+
+    </div>
+    <script>
+        var elem = document.querySelector('#box'); //#box for id,   .box for class
+        elem.animate([
+            { transform: "translate(0,0)", background: "green" },
+            { transform: "translate(0,700px)", background: "yellow" },
+            { transform: "translate(700px,0)", background: "orange" },
+            { transform: "translate(0,0)", background: "pink" },
+        ], {
+            duration: 4000,
+            iterations: Infinity
+        });
+    </script>
+
+</body>
+
+</html>
